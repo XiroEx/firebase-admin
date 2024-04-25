@@ -1,28 +1,18 @@
 
 import { applicationDefault, initializeApp } from 'firebase-admin/app'
-import { FieldValue, getFirestore } from 'firebase-admin/firestore'
+import { FieldValue, Firestore, getFirestore } from 'firebase-admin/firestore'
 
-const app = initializeApp({
+initializeApp({
     credential: applicationDefault(),
 })
 
-export const setApp = (projectId: string) => {
-    initializeApp({
-        credential: applicationDefault(),
-        projectId,
-    })
-}
-
 /********  Firestore  **********/
-let firestore = getFirestore()
-
-export const db = firestore
+export let db = getFirestore()
 
 export const setDb = (firestoreId: string) => {
-    firestore = getFirestore(firestoreId)
+    db = getFirestore(firestoreId)
 }
 export const setFirestore = setDb
-
 
 export const getDoc = async (collection: string, doc: string) => {
     const docRef = db.collection(collection).doc(doc)
