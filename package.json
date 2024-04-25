@@ -2,12 +2,13 @@
   "name": "@xiroex/firebase-admin",
   "version": "0.0.1",
   "description": "A simplified wrapper for Firebase Admin SDK",
+  "author": "George Abreu Jr. <george8794@gmail.com> (https://georgeanthony.net/)",
+  "license": "GPL-3.0-only",
+  "homepage": "https://georgeanthony.net/",
   "main": "dist/index.js",
   "scripts": {
     "prepare": "tsc -d"
   },
-  "author": "George Abreu Jr. <george8794@gmail.com> (https://georgeanthony.net/)",
-  "license": "GPL-3.0-only",
   "files": [
     "dist/",
     "LICENSE",

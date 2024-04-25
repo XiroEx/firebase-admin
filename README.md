@@ -1,6 +1,8 @@
-## @xiroex/firebase-admin: A Simplified Firebase Admin SDK Wrapper
+## A Simplified Firebase Admin SDK Wrapper
 
-This package provides a simplified wrapper for the Firebase Admin SDK, making it easier to interact with your Firebase project's Firestore database.
+This package provides a simplified wrapper for the Firebase Admin SDK, making it easier to interact with your Firebase project's Firestore database. 
+
+### <center style="color:red">Support for more Admin functions coming soon!</center>
 
 ### Installation
 
