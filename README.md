@@ -74,4 +74,4 @@ This package is licensed under the GPL-3.0-only license. [https://en.wikipedia.o
 
 ### Contributing
 
-We welcome contributions to this project. Please see the contributing guidelines in the CONTRIBUTING.md file for more details.
+We encourage contributions to this library. Please refer to the contribution guidelines if you wish to contribute ([https://docs.github.com/en/get-started/exploring-projects-on-github/contributing-to-a-project](https://docs.github.com/en/get-started/exploring-projects-on-github/contributing-to-a-project)).

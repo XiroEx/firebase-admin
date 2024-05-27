@@ -4,7 +4,7 @@
   "description": "A simplified wrapper for Firebase Admin SDK",
   "author": "George Abreu Jr. <george8794@gmail.com> (https://georgeanthony.net/)",
   "license": "GPL-3.0-only",
-  "homepage": "https://georgeanthony.net/",
+  "homepage": "https://github.com/xiroex/firebase-admin#readme",
   "main": "dist/index.js",
   "scripts": {
     "prepare": "tsc -d"
@@ -27,7 +27,12 @@
     "url": "https://github.com/xiroex/firebase-admin.git"
   },
   "dependencies": {
-    "firebase-admin": "^12.1.0"
+    "@types/uuid": "^9.0.8",
+    "firebase-admin": "^12.1.0",
+    "uuid": "^9.0.1"
+  },
+  "bugs": {
+    "url": "https://github.com/xiroex/firebase-admin/issues"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.0.2",
@@ -40,5 +45,37 @@
     "eslint-plugin-promise": "^6.1.1",
     "globals": "^15.0.0",
     "typescript": "^5.4.5"
+  },
+  "types": "dist/index.d.ts",
+  "typesVersions": {
+    "*": {
+      "firestore": [
+        "dist/lib/firestore.d.ts"
+      ],
+      "user": [
+        "dist/lib/user.d.ts"
+      ],
+      "authentication": [
+        "dist/lib/authentication.d.ts"
+      ]
+    }
+  },
+  "exports": {
+    ".": "./dist/index.js",
+    "./firestore": {
+      "types": "./dist/lib/firestore.d.ts",
+      "require": "./dist/lib/firestore.js",
+      "import": "./dist/lib/firestore.js"
+    },
+    "./user": {
+      "types": "./dist/lib/user.d.ts",
+      "require": "./dist/lib/user.js",
+      "import": "./dist/lib/user.js"
+    },
+    "./authentication": {
+      "types": "./dist/lib/authentication.d.ts",
+      "require": "./dist/lib/authentication.js",
+      "import": "./dist/lib/authentication.js"
+    }
   }
 }
